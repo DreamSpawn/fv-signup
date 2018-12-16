@@ -157,7 +157,8 @@
                             {
                                 'action': 'tilmelding_login',
                                 'username': jQuery('#load-username').val(),
-                                'password': jQuery('#load-password').val()
+                                'password': jQuery('#load-password').val(),
+                                'session' : '<?php echo session_id(); ?>'
                             }, 
                             function(response)
                             {

@@ -80,6 +80,9 @@ function ajax_tilmelding_login()
     //$cookie_jar = tempnam('/tmp','tilmelding-cookie-'.rand());
     $username = $_POST['username'];
     $password = $_POST['password'];
+    if (isset($_POST['session'])) {
+        session_id($_POST['session']);
+    }
     
     $ic = new InfosysConnect();
     $ic->create_cookiejar();
