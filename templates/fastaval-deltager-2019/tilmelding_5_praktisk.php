@@ -305,8 +305,20 @@
             			'input-name'=>'days_sleeping_5',
             			'text'=>'page4_text17',
         			));
-                    ?></div><?php
-                    ?>
+                    ?></div>
+					
+					
+					<?php if ($this->get_age()>=18){ ?>
+						<h2><?php __etm('page4_headline_young');?></h2>
+						<p><?php __etm('page4_text_young');?></p>
+						<?php
+						renderFieldByType(array(
+							'id'=>'field_special_sleeping_young',
+							'input-type'=>'checkbox',
+							'input-name'=>'special_sleeping_young',
+							'text'=>'page4_text20',
+						));
+					} ?>
                     
                     <p><?php __etm('page4_text18');?></p>
                     
