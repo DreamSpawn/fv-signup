@@ -546,7 +546,7 @@
                                 			'deltager'=>'nocat_106',
                                 			'deltagerjunior'=>'nocat_deltagerjunior',
                                 			'--' => "<br>",
-                                			'arrangoer'=>'nocat_108',
+                                			'arrangoer'=>'nocat_organizer',
                                 			
                                 			/*
                                 			'--' => "<br>".__tm('page2_text19')."<br><br>",
