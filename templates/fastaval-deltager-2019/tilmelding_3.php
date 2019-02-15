@@ -17,6 +17,8 @@
         
         public function canShow()
         {
+            if (!isset($_SESSION['customer']) || !isset($_SESSION['customer']['participant'])) return false;
+
             if ($_SESSION['customer']['participant']=='deltagerjunior')return false;
 
             if (!in_array($_SESSION['customer']['participant'], array('deltagerjunior', 'deltager')))

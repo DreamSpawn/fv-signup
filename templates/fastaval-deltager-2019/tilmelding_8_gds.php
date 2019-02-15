@@ -21,6 +21,8 @@
         
         public function canShow()
         {
+            if (!isset($_SESSION['customer']) || !isset($_SESSION['customer']['participant'])) return true;
+
             if ($_SESSION['customer']['participant']=='deltagerjunior') return false;
 
             $numdays = 0;
