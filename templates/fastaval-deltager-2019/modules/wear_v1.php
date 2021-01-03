@@ -6,13 +6,14 @@ if (!class_exists("wear_v1")){
 		function exclusives_groups(){
 			$exclusive_sets = array(
 				array(	// crew shirts
-					23, // crew herre rabat
-					24  // crew dame rabat
+					29,	// crew T-shirt med rabat Herre
+					43	// crew T-shirt med rabat Dame
 				),
 				array( // junior shirts
-					3, 	// junior barn
-					21,	// junior herre
-					22	// junior dame
+					3, 	// junior T-shirt Barn Herre
+					40,	// junior T-shirt Barn Dame
+					22,	// junior T-shirt Herre
+					42	// junior T-shirt Dame
 				),
 				array(30) // sild
 			);
@@ -131,10 +132,10 @@ if (!class_exists("wear_v1")){
             	     "4XL",
             	     "5XL",
             	     "6XL",
-            	     "7XL",
-            	     "8XL",
-            	     "9XL",
-            	     "10XL", 
+//            	     "7XL",
+//            	     "8XL",
+//            	     "9XL",
+ //           	     "10XL", 
             	     "2ÅR", 
             	     "4/6ÅR", 
             	     "8/10ÅR", 

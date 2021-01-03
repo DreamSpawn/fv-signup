@@ -61,12 +61,12 @@
                         ?>
                         
                         if (
-                            (jQuery('#days_all').attr('checked')=="checked")   ||
-                            (jQuery('#days_1').attr('checked')=="checked")   ||
-                            (jQuery('#days_2').attr('checked')=="checked")   ||
-                            (jQuery('#days_3').attr('checked')=="checked")   ||
-                            (jQuery('#days_4').attr('checked')=="checked")   ||
-                            (jQuery('#days_5').attr('checked')=="checked")
+                            jQuery('#days_all').prop('checked')   ||
+                            jQuery('#days_1').prop('checked')   ||
+                            jQuery('#days_2').prop('checked')   ||
+                            jQuery('#days_3').prop('checked')   ||
+                            jQuery('#days_4').prop('checked')   ||
+                            jQuery('#days_5').prop('checked')
                         )
                             return true;
                         alert('<?php __etm('nocat_127')?>');
@@ -126,7 +126,7 @@
                 			{
                     			function days_logic()
                     			{
-                        			if (jQuery('#days_all').attr('checked'))
+                        			if (jQuery('#days_all').prop('checked'))
                         			{
                             			jQuery('#days_1').attr("disabled", true);
                             			jQuery('#days_2').attr("disabled", true);
@@ -224,7 +224,7 @@
             			
             			function sleeping_logic()
             			{
-                			if (jQuery('#days_sleeping').attr('checked')){
+                			if (jQuery('#days_sleeping').prop('checked')){
                     			jQuery('#days_sleeping_1').attr("disabled", true);
                     			jQuery('#days_sleeping_2').attr("disabled", true);
                     			jQuery('#days_sleeping_3').attr("disabled", true);
