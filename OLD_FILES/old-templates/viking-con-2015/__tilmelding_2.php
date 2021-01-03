@@ -362,7 +362,7 @@
 			var v = jQuery("#extra_gm_information").val();
 			var parts=Array();
 			if (v!="")parts=v.split(",");
-			if (jQuery(this).attr("checked"))
+			if (jQuery(this).prop('checked'))
 				parts[parts.length] = jQuery(this).val();
 			else{
 				var res = Array();
