@@ -106,7 +106,9 @@ class VCSys_Tilmelding
 	{
 	    wp_enqueue_style( 'vcsys-lightbox', plugins_url('lightbox/css/lightbox.css', __FILE__) );
 		wp_enqueue_style( 'prefix-style', plugins_url($this->get_template_folder().'tilmelding.css', __FILE__) );
-		wp_enqueue_style( 'fusion-dynamic-css-css', plugins_url($this->get_template_folder().'copy_of_fusion_dynamic.min.css ', __FILE__) );
+		//wp_enqueue_style( 'fusion-dynamic-css-css', plugins_url($this->get_template_folder().'copy_of_fusion_dynamic.min.css', __FILE__) );
+		wp_enqueue_style( 'fusion-dynamic-css-css', plugins_url($this->get_template_folder().'fusion.min.css', __FILE__) );
+		wp_enqueue_style( 'wp-block-library-theme-css', plugins_url($this->get_template_folder().'theme.min.css', __FILE__) );
 	    wp_enqueue_style( 'signup-responsive', plugins_url($this->get_template_folder().'responsive.css', __FILE__) );
 	}
 
