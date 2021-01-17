@@ -543,8 +543,9 @@
                     			'text'=>'nocat_112_1',
                     			'value' => array(
                                 			'deltager'=>'nocat_106',
-                                			'deltagerjunior'=>'nocat_deltagerjunior',
-                                			'--' => "<br>",
+                                            /* No junior event at virtual con
+                                            'deltagerjunior'=>'nocat_deltagerjunior',
+                                			'--' => "<br>",*/
                                 			'arrangoer'=>'nocat_organizer',
                                 			
                                 			/*
