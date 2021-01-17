@@ -499,3 +499,19 @@ td div.dead {
 #tilmelding-info #aktiviteter table tr td {
   padding: 0;
 }
+
+.fusion-header {
+  color: #129967;
+  background-color: #ffffff;
+}
+
+.fusion-main-menu>ul>li>a:not(.fusion-logo-link):not(.fusion-icon-sliding-bar):hover{
+  border-color: #129967;
+}
+
+.fusion-main-menu>ul>li>a:not(.fusion-logo-link):not(.fusion-icon-sliding-bar){
+  border-color: transparent;
+  border-top-width: 3px;
+  border-top-style: solid;
+  text-decoration: none;
+}
