@@ -520,20 +520,20 @@
 			
 			<div id='aktiviteter'>
 				<?php //TODO Add this to wp admin in some way
-        		 if ($this->attends_con_at_numday(1) && isset($afviklinger_daysplit[8])){
-    	    	     $this->ft_aktiviteterByDayJSON(8, "Onsdag (8. april 2020)", $afviklinger_daysplit[8] );
+        		 if ($this->attends_con_at_numday(1) && isset($afviklinger_daysplit[31])){
+    	    	     $this->ft_aktiviteterByDayJSON(31, "Onsdag (31. marts 2020)", $afviklinger_daysplit[31] );
         		 }
-        		 if ($this->attends_con_at_numday(2) && isset($afviklinger_daysplit[9])){
-        		     $this->ft_aktiviteterByDayJSON(9, "Torsdag (9. april 2020)", $afviklinger_daysplit[9] );
+        		 if ($this->attends_con_at_numday(2) && isset($afviklinger_daysplit[1])){
+        		     $this->ft_aktiviteterByDayJSON(1, "Torsdag (1. april 2020)", $afviklinger_daysplit[1] );
         		 }
-        		 if ($this->attends_con_at_numday(3) && isset($afviklinger_daysplit[10])){
-        		     $this->ft_aktiviteterByDayJSON(10, "Fredag (10. april 2020)", $afviklinger_daysplit[10] );
+        		 if ($this->attends_con_at_numday(3) && isset($afviklinger_daysplit[2])){
+        		     $this->ft_aktiviteterByDayJSON(2, "Fredag (2. april 2020)", $afviklinger_daysplit[2] );
         		 }
-        		 if ($this->attends_con_at_numday(4) && isset($afviklinger_daysplit[11])){
-        		     $this->ft_aktiviteterByDayJSON(11, "Lørdag (11. april 2020)", $afviklinger_daysplit[11] );
+        		 if ($this->attends_con_at_numday(4) && isset($afviklinger_daysplit[3])){
+        		     $this->ft_aktiviteterByDayJSON(3, "Lørdag (3. april 2020)", $afviklinger_daysplit[3] );
         		 }
-        		 if ($this->attends_con_at_numday(5) && isset($afviklinger_daysplit[12])){
-        		     $this->ft_aktiviteterByDayJSON(12, "Søndag (12. april 2020)", $afviklinger_daysplit[12] );
+        		 if ($this->attends_con_at_numday(5) && isset($afviklinger_daysplit[4])){
+        		     $this->ft_aktiviteterByDayJSON(4, "Søndag (4. april 2020)", $afviklinger_daysplit[4] );
         		 }
         		 
 			 ?>
