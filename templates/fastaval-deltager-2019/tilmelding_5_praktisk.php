@@ -175,7 +175,7 @@
                         {
                             echo "<p>".__etm('page4_text4')."</p>";
                         } 
-                        
+                        /* No single day tickets for the virtual con
                         ?><div class='grouped'><?php
             			renderFieldByType(array(
                 			'id'=>'field_days_1',
@@ -207,10 +207,10 @@
                 			'input-name'=>'days_5',
                 			'text'=>'page4_text9',
             			));
-                        ?></div><?php
+                        ?></div><?php*/
                     }
             			
-            			
+            			/* No sleeping at the virtual con
                     ?><h2><?php __etm('page4_text10');?></h2><?php
                         
         			renderFieldByType(array(
@@ -321,7 +321,7 @@
             			'input-type'=>'checkbox',
             			'input-name'=>'sober_sleeping',
             			'text'=>'page4_text21',
-        			));
+        			));*/
         			?>
 
 
