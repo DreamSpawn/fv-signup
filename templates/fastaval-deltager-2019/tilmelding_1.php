@@ -69,6 +69,7 @@
                 <script>
                     jQuery(document).ready(function(){
                         // disable the next buttons until accept of gdpr rules
+                        jQuery('#gdpr_accept').prop("checked", false);
                         jQuery('.next').prop("disabled", true).css('opacity', '0.5');
 
                         jQuery('#gdpr_accept').click(function(event){
