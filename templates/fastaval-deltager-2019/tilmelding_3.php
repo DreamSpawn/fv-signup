@@ -128,11 +128,12 @@
                         <li><?php __etm('page2b_text7');?></li>
                     </ul>
                     
-                    
+                    <?php /*
                     <p><strong><?php __etm('page2b_text8');?></strong></p>
                     <ul>
                         <li><?php __etm('page2b_text9');?></li>
                     </ul>
+                    */ ?>
                     
             
                     <h2><?php __etm('page2b_text10'); ?></h2>

@@ -272,7 +272,7 @@
                     }?>
                     
                     <?php if (!$junior){ // No GM or Scenario competition for junior
-                        if ($this->get_age()>=13){?>
+                        /*if ($this->get_age()>=13){?>
                     
                             <h2><?php __etm('nocat_28');?></h2>
                             <p><?php __etm('nocat_29');?></p>
@@ -298,7 +298,7 @@
                             ));
                             ?>
                             -->
-                        <?php }?>
+                        <?php }*/?>
                             
                         <h2><?php __etm('nocat_32');?></h2>
                         <?php
