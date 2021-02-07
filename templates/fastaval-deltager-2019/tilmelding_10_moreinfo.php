@@ -73,13 +73,15 @@ class DeltagerTilmeldingMoreInfoPage10 extends SignupPage
 					'input-name'=>'simultantolk',
 					'text'=>'nocat_201',
 				));
+
+				/* not in virtual con
 				renderFieldByType(array(
 					'id'=>'other_international',
 					'input-type'=>'checkbox',
 					'input-name'=>'other_international',
 					'text'=>'nocat_202',
 				));
-
+				*/
 
 				renderFieldByType(array(
 					'id'=>'other_2010',
@@ -101,12 +103,12 @@ class DeltagerTilmeldingMoreInfoPage10 extends SignupPage
 						"46"=>"100",
 						"47"=>"200",
 						"48"=>"300",
-						"49"=>"400",
+						/*"49"=>"400",
 						"50"=>"500",
 						"60"=>"600",
 						"61"=>"700",
 						"62"=>"800",
-						"63"=>"900",
+						"63"=>"900",*/
 					),
 				));
 
@@ -122,15 +124,16 @@ class DeltagerTilmeldingMoreInfoPage10 extends SignupPage
 						"51"=>"100",
 						"52"=>"200",
 						"53"=>"300",
-						"54"=>"400",
+						/*"54"=>"400",
 						"55"=>"500",
 						"56"=>"600",
 						"64"=>"700",
 						"58"=>"800",
-						"59"=>"900",
+						"59"=>"900",*/
 					),
 				));
 
+				/* no preparation for virtual con
 				?>
 				<h3><?php __etm('nocat_207');?></h3>
 				<p><?php __etm('nocat_207_1');?></p>
@@ -148,8 +151,9 @@ class DeltagerTilmeldingMoreInfoPage10 extends SignupPage
 					'input-name'=>'ready_tirsdag',
 					'text'=>'nocat_209',
 				));
-
+				*/
 				?>
+				
 				<h3><?php __etm('nocat_210');?></h3>
 				<p><?php __etm('nocat_211');?></p>
 				<?php

@@ -117,7 +117,32 @@
                  }
         	     function validate_form(thisform)
         	     {
-            	     jQuery('input.has-error').removeClass('has-error');
+            	    jQuery('input.has-error').removeClass('has-error');
+                    // Check if person is at least 15 years old at start of virtual con
+                    var date_fields = [
+                        "#birthday-day",
+                        "#birthday-month",
+                        "#birthday-year"
+                    ]
+                    var date = [];
+                    for(var i = 0; i < date_fields.length; i++){
+                        var value = jQuery(date_fields[i]).val();
+                        if (isNaN(value)) {
+                            alert("<?php __etm('general_text2');?>");
+                            jQuery(date_fields[i]).focus();
+                            jQuery(date_fields[i]).addClass('has-error');
+                            return false;
+                        }
+                        date[i] = parseInt(value);
+                    }
+                    
+                    var birth_date_15 = new Date(date[2]+15, date[1]-1, date[0]);
+                    var con_start = new Date(2021,2,31);
+                    if (birth_date_15 > con_start){
+                        alert("<?php __etm('page2_too_young');?>");
+                        return false;
+                    }
+
             	     <?php
                 	     renderErrorHandlerAsJavascript($my_errorHandler);
             	     ?>
@@ -481,13 +506,14 @@
                     			'input-name'=>'mobile',
                     			'text'=>'page2_text10'
                     			
-                			));
+                            ));
+                            /* no mobile updates for virtual con
                 			renderFieldByType(array(
                     			'id'=>'field1_17',
                     			'input-type'=>'checkbox',
                     			'input-name'=>'bringing_mobile',
                     			'text'=>'page2_text12'
-                			));
+                			));*/
         
                 			renderFieldByType(array(
                     			'id'=>'field1_18',
@@ -564,7 +590,7 @@
             			?>
             		</div>
             		
-            		
+            		<?php /* No Health info for virtual con
             		
             		<h2><?php __etm('page2_text21');?></h2>
             		<div class='fields fields_2'>
@@ -589,7 +615,8 @@
             			
                         ?>
                         
-            		</div>
+                    </div>
+                    */ ?>
                 <?php tilm_form_postfields(); ?>
                     <?php render_next_button("general_next_page");?>
                 </div>
