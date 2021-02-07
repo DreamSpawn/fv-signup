@@ -481,13 +481,14 @@
                     			'input-name'=>'mobile',
                     			'text'=>'page2_text10'
                     			
-                			));
+                            ));
+                            /* no mobile updates for virtual con
                 			renderFieldByType(array(
                     			'id'=>'field1_17',
                     			'input-type'=>'checkbox',
                     			'input-name'=>'bringing_mobile',
                     			'text'=>'page2_text12'
-                			));
+                			));*/
         
                 			renderFieldByType(array(
                     			'id'=>'field1_18',
@@ -564,7 +565,7 @@
             			?>
             		</div>
             		
-            		
+            		<?php /* No Health info for virtual con
             		
             		<h2><?php __etm('page2_text21');?></h2>
             		<div class='fields fields_2'>
@@ -589,7 +590,8 @@
             			
                         ?>
                         
-            		</div>
+                    </div>
+                    */ ?>
                 <?php tilm_form_postfields(); ?>
                     <?php render_next_button("general_next_page");?>
                 </div>

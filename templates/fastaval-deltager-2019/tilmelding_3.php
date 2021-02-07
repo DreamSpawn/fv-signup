@@ -138,7 +138,7 @@
                     <h2><?php __etm('page2b_text10'); ?></h2>
                     <p><?php __etm('page2b_text11');?></p>
                     
-                    
+                    <?php /* No sleeping quarters at virtual con
                     
                     <h2><?php __etm('page2b_text12'); ?></h2>
                     <p><?php __etm('page2b_text13');?></p>
@@ -153,6 +153,8 @@
                 		));
             		
                     ?>
+
+                    */ ?>
                         
                 </div>
                 <?php tilm_form_postfields(); ?>
