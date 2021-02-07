@@ -60,17 +60,23 @@
                             }
                         ?>
                         
-                        if (
-                            jQuery('#days_all').prop('checked')   ||
-                            jQuery('#days_1').prop('checked')   ||
-                            jQuery('#days_2').prop('checked')   ||
-                            jQuery('#days_3').prop('checked')   ||
-                            jQuery('#days_4').prop('checked')   ||
-                            jQuery('#days_5').prop('checked')
-                        )
-                            return true;
-                        alert('<?php __etm('nocat_127')?>');
-                        return false;
+                        if (!jQuery('#days_all').prop('checked') &&
+                            !jQuery('#days_1').prop('checked') &&
+                            !jQuery('#days_2').prop('checked') &&
+                            !jQuery('#days_3').prop('checked') &&
+                            !jQuery('#days_4').prop('checked') &&
+                            !jQuery('#days_5').prop('checked')) 
+												{
+													alert('<?php __etm('nocat_127')?>');
+	                        return false;
+												}
+
+												if(!jQuery('#new_alea').prop('checked')) {
+													alert('<?php __etm('nocat_127b')?>');
+	                        return false;
+												}
+
+												return true;
                     }
                 </script>
                 <?php
@@ -329,29 +335,17 @@
                     <h2><?php __etm('page3_text5');?></h2>
                     <p><?php __etm('page3_text2');?></p>
                     <?php
-					if (in_array($_SESSION['customer']['participant'], array('deltagerjunior', 'deltager'))){
+					if (!in_array($_SESSION['customer']['participant'], array('deltagerjunior', 'deltager'))){
+						// co-organizer - have to be a member of Alea due to inssurance
+						?><p><?php __etm('page3_text4');?></p><?php
+					}
 						// regular antendee
 						renderFieldByType(array(
 							'id'=>'field1_17',
-							'input-type'=>'radio',
+							'input-type'=>'checkbox',
 							'input-name'=>'new_alea',
 							'text'=>'page3_text3',
-							'value' => array(
-										'1' => __tm('page3_text3'),
-										'-1' => __tm('pagealea_no_thanks'),
-										),
-							'value-default' => '1',
 						));
-					} else {
-						// co-organizer - have to be a member of Alea due to inssurance
-						echo "<p class='field1_17 field-type-checkbox'>";
-						echo "<input class='tilmelding-input tilmelding-input-checkbox' id='field1_17' type='checkbox' disabled='true' value='1' checked='true'>";
-						echo "<input hidden='true' value='1' name='new_alea'>";
-						echo "<label for='field1_17'>";
-						__etm('page3_text4');
-						echo "</label>";
-						echo "</p>";
-					}
 
 
 
