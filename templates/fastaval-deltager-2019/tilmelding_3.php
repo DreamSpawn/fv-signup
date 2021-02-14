@@ -106,10 +106,10 @@
                                 			'arrangoer'=>'nocat_108',
                                 			'forfatter'=>'nocat_107',
                                 			'infonaut'=>'nocat_109',
-                                			'dirtbuster'=>'nocat_110',
+                                			/*'dirtbuster'=>'nocat_110',*/
                                 			'brandvagt'=>'nocat_111',
-                                			'kioskninja'=>'nocat_112',
-                                			'kaffekro'=>'nocat_kaffekro',
+                                			/*'kioskninja'=>'nocat_112',
+                                			'kaffekro'=>'nocat_kaffekro',*/
                                 			'juniorarrangoer'=>'nocat_arrangoerjunior',
                                 ),
                                 'value-default' => 'deltager',
