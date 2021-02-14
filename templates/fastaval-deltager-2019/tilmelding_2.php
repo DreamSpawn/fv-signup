@@ -539,7 +539,7 @@
             			<p class="field1_9"><label for="email"><?php __etm('nocat_58');?>:</label> <input class='tilmelding-input'  type="text" id='email' name="email" value="<?php  echo (gf("email"))?>" /><?php getError("email");?></p>
             			<p class="field1_10"><label for="email_repeat"><?php __etm('nocat_58_1');?>:</label> <input class='tilmelding-input' type="text" id='email_repeat' name="email_repeat" value="<?php  echo (gf("email_repeat"))?>" /><?php getError("email_repeat");?></p>
                         <?php
-        
+                            /*
                 			renderFieldByType(array(
                     			'id'=>'field1_15',
                     			'input-type'=>'checkbox',
@@ -553,7 +553,7 @@
                     			'text'=>'page2_text17',
                     			'class'=> array('fullsize-label'),
                 			));
-                            
+                            */
                         ?>
             		</div>
             		<h2><?php __etm('page2_text18');?></h2>
